@@ -113,6 +113,7 @@ setTimeout(()=>{
   }
   activate(0);
   rows.forEach(row=>row.addEventListener('mouseenter',()=>activate(+row.dataset.service)));
+  rows.forEach(row=>row.addEventListener('click',()=>activate(+row.dataset.service)));
 })();
 
 /* CONTACT SCRAMBLE */
