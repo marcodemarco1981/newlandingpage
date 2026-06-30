@@ -112,8 +112,11 @@ setTimeout(()=>{
     if(giantNum)giantNum.textContent=nums[idx];
   }
   activate(0);
-  rows.forEach(row=>row.addEventListener('mouseenter',()=>activate(+row.dataset.service)));
-  rows.forEach(row=>row.addEventListener('click',()=>activate(+row.dataset.service)));
+  rows.forEach(row=>{
+    row.addEventListener('mouseenter',()=>activate(+row.dataset.service));
+    row.addEventListener('click',(e)=>{e.preventDefault();activate(+row.dataset.service)});
+    row.addEventListener('touchstart',(e)=>{e.preventDefault();activate(+row.dataset.service)},{passive:false});
+  });
 })();
 
 /* CONTACT SCRAMBLE */
