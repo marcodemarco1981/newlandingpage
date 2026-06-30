@@ -53,7 +53,7 @@ const brands = [
   {name:'Les Jardins', logo:'assets/img/brand-les-jardins.png', url:'https://lesjardinsliving.com/'},
   {name:'TCI Led', logo:'assets/img/brand-tci-led.png', url:'https://www.tci.it/'},
   {name:'FORALL', logo:'assets/img/brand-forall.png', url:'https://for-all.it/'},
-  {name:'Olè', logo:null, url:'https://www.ole-lighting.com/en'},
+  {name:'Olè', logo:'assets/img/brand-ole.svg', url:'https://www.ole-lighting.com/en'},
   {name:'Lombardo', logo:'assets/img/brand-lombardo.png', url:'https://www.lombardo.it/it'},
   {name:'ACB', logo:'assets/img/brand-acb.png', url:'https://acb.lighting/'},
   {name:'Cini & Nils', logo:'assets/img/brand-cini-nils.png', url:'https://www.cinienils.com/it'},
