@@ -130,7 +130,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--fg);overflo
 .contact-section{padding:96px 44px 100px;position:relative;overflow:hidden}
 .contact-section::before{content:'';position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(212,197,160,.05) 0%,transparent 65%);pointer-events:none;animation:glowPulse 8s ease-in-out infinite reverse}
 .contact-big{margin-bottom:72px}
-.contact-big .scramble-line{font-size:clamp(48px,8vw,100px);font-weight:800;line-height:.94;letter-spacing:-.04em;color:var(--fg);display:block}
+.contact-big .scramble-line{font-size:clamp(48px,8vw,100px);font-weight:800;line-height:.94;letter-spacing:-.04em;color:var(--fg);display:block;white-space:nowrap;will-change:contents}
 .contact-big .ghost-word{font-size:clamp(48px,8vw,100px);font-weight:800;line-height:.94;letter-spacing:-.04em;font-style:italic;display:block;color:rgba(240,237,232,.65)}
 .contact-big .ghost-word em{font-style:italic;color:inherit}
 .contact-big .reveal-word{font-size:clamp(48px,8vw,100px);font-weight:800;line-height:.94;letter-spacing:-.04em;display:block;overflow:hidden;padding-bottom:.18em;margin-bottom:-.18em}
