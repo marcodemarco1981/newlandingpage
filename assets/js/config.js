@@ -121,8 +121,11 @@ setTimeout(()=>{
 
 /* CONTACT SCRAMBLE */
 (function(){
-  const chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&';
+  const chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   function scramble(el,finalText,duration){
+    // Lock width to final text before starting to prevent layout shift
+    el.style.minWidth=el.getBoundingClientRect().width+'px';
+    el.style.display='block';
     const steps=Math.floor(duration/55);
     let step=0;
     const interval=setInterval(()=>{
@@ -135,7 +138,7 @@ setTimeout(()=>{
         display+=i<revealed?finalText[i]:chars[Math.floor(Math.random()*chars.length)];
       }
       el.textContent=display;
-      if(step>=steps){clearInterval(interval);el.textContent=finalText}
+      if(step>=steps){clearInterval(interval);el.textContent=finalText;el.style.minWidth=''}
     },55);
   }
   const contactObs=new IntersectionObserver(entries=>{
